@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Nacionalidade</title>
+    <style>
+        div#info {
+            font: normal 18pt Arial;
+            width: 300px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    <div id="info">
+        Buenos dias mi amigo, coloque la sigla de su país que te digo se tu és ou não mexicano.
+    </div>
+
+    <input type="text" name="txt" id="txt">
+    </br>
+    <input type="button" value="Taca Pau" onclick="verificar()">
+    
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var nac = (window.document.querySelector('input#txt')).value
+
+            if (nac == 'MEX'){
+                res.innerHTML = "Parabéns muchacho, tu és <u>MEXICANO</u>"
+            }else{
+                res.innerHTML = `Que pena, não é meu conterrâneo. É ${nac}`
+            }
+        }
+    </script>
+    
+</body>
+</html>
